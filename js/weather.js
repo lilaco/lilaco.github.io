@@ -20,15 +20,18 @@ function onGeoOk(position){
         // 서버가 응답하면 json 객체로 받도록 한다.
         .then(response => response.json())  
         .then((data) => {
-            // 지역이름과, 날씨를 제대로 가져오는지 콘솔로 확인
-            console.log(data.name, data.weather[0].main);
-
             const weather = document.querySelector("#weather span:first-child");
             const city = document.querySelector("#weather span:last-child");
+            const weatherIcon = document.querySelector("#weather-icon");
+            
+            const temp = Math.floor(data.main.temp);
+            const iconCode = data.weather[0].icon;
 
+            weatherIcon.src = `img/weather/${iconCode}.png`;
             city.innerText = data.name;
-            weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
-        });;
+            weather.innerText = `${temp}℃ / `;
+
+        });
 
 }
 

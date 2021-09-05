@@ -22,7 +22,7 @@ function onLoginSubmit(event) {
 
 // greeting의 입력과 hidden class를 제거하는 것이 반복 사용되어 function으로 처리
 function paintGreetings(username){
-    greeting.innerText = `Hello ${username}`;
+    greeting.innerText = `Hello ${username}! 🤗`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
 }
 
