@@ -54,6 +54,7 @@ button {
     border-radius: 2px;
     padding: 1.4rem 2rem 1.6rem;
     background: rgba(236, 237, 240, 0.925);
+    opacity: 0.85;
 }
 .webflow-style-input input {
     border-style: none;
@@ -104,6 +105,7 @@ button {
     width: 50%;
     background-color: snow;
     text-align: center;
+    opacity: 0.85;
 }
 #todo-form input{
     max-width: 400px;
