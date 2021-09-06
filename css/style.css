@@ -93,6 +93,7 @@ button {
     line-height: 2.4rem;
     vertical-align: middle;
     transition: color 0.25s;
+    cursor: pointer;
 }
 .webflow-style-input button:hover {
     color: #5074c9;
